@@ -11,18 +11,27 @@
 			max-width: 100%;
 			vertical-align: top;
 		}
+		#responsive{
+			display: none;
+		}
+
+		@media screen and (max-width: 768px){
+			img{
+				display: none;
+			}
+			#responsive{
+				display: block !important;
+			}	
+		}
 	</style>
 </head>
 <body>
-	<header>
-		<img src="header.jpg">
-	</header>
-	<section class="content">
-		<img src="hero.jpg">
-	</section>
-	<footer>
-		<img src="acustica.jpg">
-		<img src="clasica.jpg">
-	</footer>
+
+	<img id="responsive" src="invie-responsive.png">
+	<img src="header.jpg">
+	<img src="hero.jpg">
+	<img src="acustica.jpg">
+	<img src="clasica.jpg">
+
 </body>
 </html>
